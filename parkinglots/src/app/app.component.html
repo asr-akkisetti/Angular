@@ -1,0 +1,24 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <button mat-icon-button>
+      <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+    </button>
+    
+    
+    <h1>Parkinglot App</h1>
+    <span class="menu-spacer"></span>
+    <div>
+      <a mat-button [routerLink]="'/home'"> Home </a>
+      <a mat-button [routerLink]="'/parking-request'">Parking Request</a>
+      <a mat-button [routerLink]="'/parking-lots'"> ParkingLot Request </a>
+    </div>
+  </mat-toolbar-row>
+
+  <mat-toolbar-row>
+      <span style="font-size: 12px;">Parkinglot application helps you easily manage your parking</span>
+    </mat-toolbar-row>
+</mat-toolbar>
+
+
+<!-- <app-parkinglot-form></app-parkinglot-form> -->
+<router-outlet></router-outlet>
